@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.titulo{
+font-family: 'Montserrat', sans-serif;  
+font-size: 40px;
+text-align: center;
+font-weight: 600;
+}
+
+li{
+    list-style-type: none;
+}
+
+.hover{
+    background-image: none;
+}
+
+.mark{
+
+}
+
+.J-Ataque{
+    display: none;
+}
+.J-Meia{
+    display: none;
+}
+.J-Defesa{
+    display: none;
+}
+.J-Goleiro{
+    display: none;
+}
+
+.player{
+    position: absolute;
+     width: 142px; 
+     height: 173px;
+     border-radius: 2px;
+
+}
+
+/* attack */
+.p1{
+    background-image: url(player.png);
+    left: 704px;
+    top: 156px;
+}
+
+.p2{
+    background-image: url(player.png);
+    left: 923px;
+    top: 157px;
+}
+
+.p3{
+    background-image: url(player.png);
+    left: 1136px;
+    top: 156px;
+}
+
+/* meio  */
+.p4{
+    background-image: url(player.png);
+    left: 704px;
+    top: 381px;
+}
+
+.p5{
+    background-image: url(player.png);
+    left: 930px;
+top: 381px;
+}
+
+.p6{
+    background-image: url(player.png);
+    left: 1136px;
+top: 381px;
+}
+
+/* zaga */
+
+.p7{
+    background-image: url(player.png);
+    left: 633px;
+top: 587px;
+}
+
+.p8{
+    background-image: url(player.png);
+    left: 825px;
+top: 587px;
+}
+
+.p9{
+    background-image: url(player.png);
+    left: 1032px;
+top: 586px;
+}
+
+.p10{
+    background-image: url(player.png);
+    left: 1207px;
+top: 593px;
+}
+
+/* goleiro  */
+.p11{
+    background-image: url(player.png);
+    left: 923px;
+    top: 792px;
+}
+
+
