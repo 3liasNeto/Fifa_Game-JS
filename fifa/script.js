@@ -39,27 +39,67 @@ $('.player').on ('click',function(){
  }
 );
 
-$('.pl1').on ('click',function(){
-    $('.p1').attr("src","ataque.png");
-}
-);
-
-const players = document.querySelectorAll("[draggable='true']");
-const caixa = document.querySelector(".player");
-
-function startP(){
-    console.log("certo");
-    this.classList.add("arrastando");
-}
-
-function soltarPlayer(){
-    this.classList.add("hover");
-    const arrastado = document.querySelector(".arrastando");
-    this.appendChild(arrastado);
-}
+const Ataque = document.querySelectorAll(".atacantes");
+const Meio = document.querySelectorAll(".meiocampo");
+const Defesa = document.querySelectorAll(".zagueiros");
+const Goleiro =document.querySelectorAll(".gol");
+const players = document.querySelectorAll(".drag");
+const caixa = document.querySelectorAll(".player");
 
 players.forEach((players) =>{
     players.addEventListener("dragstart", startP);
+    players.addEventListener('dragend', dragEnd);
+    players.addEventListener('drag', pDrag);
 });
 
+function startP(){
+    this.classList.add("arrastando");
+}
+
+function dragEnd(){
+    this.classList.remove("arrastando");
+    this.classList.add("playerAdded");
+    
+}
+
+function pDrag(){
+
+}
+
+
+// DropZone 
+caixa.forEach((caixa) => {
 caixa.addEventListener("dragover",soltarPlayer);
+caixa.addEventListener("drop",dropPlayer);
+caixa.addEventListener('dragenter', enterPlayer);
+caixa.addEventListener('dragleave', leavePlayer);
+caixa.addEventListener('click',removePl);
+});
+
+function soltarPlayer(e){
+    const arrastado = document.querySelector(".arrastando");
+    this.appendChild(arrastado);
+    this.classList.remove("player");
+
+}
+
+function dropPlayer(){
+    
+}
+
+function enterPlayer(){
+
+}
+
+function leavePlayer(){
+
+}
+
+function removePl(){
+    const playerPronto = document.querySelector('.playerAdded');
+
+        
+}
+
+        
+

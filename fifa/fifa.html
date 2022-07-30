@@ -17,31 +17,31 @@
 <h2>Jogadores</h2>
 <label for="Pesquisa">
 <div class="Escalacao">
-    <ul class="J-Ataque">
-     <li id="ataque1"><div draggable="true"><img src="ataque.png" class="pl1" alt=""></div></li>
-     <li id="ataque2"><div draggable="true"><img src="ataque.png" alt=""></div></li>
-     <li id="ataque3"><div draggable="true"><img src="ataque.png" alt=""></div></li>
-    </ul>
-    <ul class="J-Meia">
-    <li><div draggable="true"><img src="meio.png" alt=""></div></li>
-    <li><div draggable="true"><img src="meio.png" alt=""></div></li>
-    <li><div draggable="true"><img src="meio.png" alt=""></div></li>
-    </ul>
-    <ul class="J-Defesa">
-    <li><div draggable="true"><img src="zaga.png" alt=""></div></li>
-    <li><div draggable="true"><img src="zaga.png" alt=""></div></li>
-    <li><div draggable="true"><img src="zaga.png" alt=""></div></li>
-    <li><div draggable="true"><img src="zaga.png" alt=""></div></li>
-    </ul>
-    <ul class="J-Goleiro">
-        <li><div draggable="true"><img src="goleiro.png" alt=""></div></li>
-    </ul>
+    <div class="J-Ataque">
+     <div class="atacantes" draggable="true"><img src="ataque.png" draggable="true" class="pAtaque drag" alt=""></div>
+     <div class="atacantes" draggable="true"><img src="ataque.png" draggable="true" class="pAtaque drag" alt=""></div>
+     <div class="atacantes" draggable="true"><img src="ataque.png" draggable="true" class="pAtaque drag" alt=""></div>
+    </div>
+    <div class="J-Meia">
+    <div class="meiocampo" draggable="true"><img src="meio.png" draggable="true" class="pMeio drag" alt=""></div>
+    <div class="meiocampo" draggable="true"><img src="meio.png" draggable="true" class="pMeio drag" alt=""></div>
+    <div class="meiocampo" draggable="true"><img src="meio.png" draggable="true" class="pMeio drag" alt=""></div>
+    </div>
+    <div class="J-Defesa">
+    <div class="zagueiros" draggable="true"><img src="zaga.png" draggable="true" class="pZaga drag" alt=""></div>
+    <div class="zagueiros" draggable="true"><img src="zaga.png" draggable="true" class="pZaga drag" alt=""></div>
+    <div class="zagueiros" draggable="true"><img src="zaga.png" draggable="true" class="pZaga drag" alt=""></div>
+    <div class="zagueiros" draggable="true"><img src="zaga.png" draggable="true" class="pZaga drag"  alt=""></div>
+    </div>
+    <div class="J-Goleiro">
+        <div class="gol" draggable="true"><img src="goleiro.png" draggable="true" class="pGoleiro drag" alt=""></div>
+    </div>
 </div>
 </label>
 </div>
 
 <!-- Righ Container || Escalacao 4-3-3  -->
-<div>
+
     <div class="player p1 ataque"></div>
     <div class="player p2 ataque"></div>
     <div class="player p3 ataque"></div>
@@ -53,7 +53,7 @@
     <div class="player p9 zaga"></div>
     <div class="player p10 zaga"></div>
     <div class="player p11 goleiro"></div>
-</div>
+
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="script.js"></script>

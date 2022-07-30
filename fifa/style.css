@@ -42,18 +42,30 @@ li{
 
 /* attack */
 .p1{
+    position: absolute;
+    width: 142px; 
+    height: 173px;
+    border-radius: 2px;
     background-image: url(player.png);
     left: 704px;
     top: 156px;
 }
 
 .p2{
+    position: absolute;
+    width: 142px; 
+    height: 173px;
+    border-radius: 2px;
     background-image: url(player.png);
     left: 923px;
     top: 157px;
 }
 
 .p3{
+    position: absolute;
+    width: 142px; 
+    height: 173px;
+    border-radius: 2px;
     background-image: url(player.png);
     left: 1136px;
     top: 156px;
@@ -61,18 +73,30 @@ li{
 
 /* meio  */
 .p4{
+    position: absolute;
+    width: 142px; 
+    height: 173px;
+    border-radius: 2px;
     background-image: url(player.png);
     left: 704px;
     top: 381px;
 }
 
 .p5{
+    position: absolute;
+    width: 142px; 
+    height: 173px;
+    border-radius: 2px;
     background-image: url(player.png);
     left: 930px;
 top: 381px;
 }
 
 .p6{
+    position: absolute;
+    width: 142px; 
+    height: 173px;
+    border-radius: 2px;
     background-image: url(player.png);
     left: 1136px;
 top: 381px;
@@ -81,24 +105,40 @@ top: 381px;
 /* zaga */
 
 .p7{
+    position: absolute;
+    width: 142px; 
+    height: 173px;
+    border-radius: 2px;
     background-image: url(player.png);
     left: 633px;
 top: 587px;
 }
 
 .p8{
+    position: absolute;
+    width: 142px; 
+    height: 173px;
+    border-radius: 2px;
     background-image: url(player.png);
     left: 825px;
 top: 587px;
 }
 
 .p9{
+    position: absolute;
+    width: 142px; 
+    height: 173px;
+    border-radius: 2px;
     background-image: url(player.png);
     left: 1032px;
 top: 586px;
 }
 
 .p10{
+    position: absolute;
+    width: 142px; 
+    height: 173px;
+    border-radius: 2px;
     background-image: url(player.png);
     left: 1207px;
 top: 593px;
@@ -106,6 +146,10 @@ top: 593px;
 
 /* goleiro  */
 .p11{
+    position: absolute;
+    width: 142px; 
+    height: 173px;
+    border-radius: 2px;
     background-image: url(player.png);
     left: 923px;
     top: 792px;
