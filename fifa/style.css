@@ -7,17 +7,11 @@ text-align: center;
 font-weight: 600;
 }
 
-li{
-    list-style-type: none;
-}
 
 .hover{
     background-image: none;
 }
 
-.mark{
-
-}
 
 .J-Ataque{
     display: none;
