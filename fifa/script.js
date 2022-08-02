@@ -127,8 +127,8 @@ function soltarPlayerAt() {
     const arrastado = document.querySelector(".arrastandoAt");
     this.appendChild(arrastado);
     this.classList.toggle("AtaPlayer");
-    const iconpl = document.querySelector(".AtaPlayer");
-    iconpl.style.background ='none';
+        const iconAta = document.querySelector(".AtaPlayer");
+        iconAta.style.background ='none';
 }
 
 function Dragend(){
@@ -147,6 +147,9 @@ caixaMe.forEach((caixa) => {
 function soltarPlayerMe() {
     const arrastado = document.querySelector(".arrastandoMe");
     this.appendChild(arrastado);
+    this.classList.toggle("MePlayer");
+    const iconMe = document.querySelector(".MePlayer");
+    iconMe.style.background ='none';
 }
 
 function removePlMe() {
@@ -161,6 +164,9 @@ caixaZa.forEach((caixa) => {
 function soltarPlayerZa() {
     const arrastado = document.querySelector(".arrastandoZa");
     this.appendChild(arrastado);
+    this.classList.toggle("ZaPlayer");
+    const iconZa = document.querySelector(".ZaPlayer");
+    iconZa.style.background ='none';
 }
 
 function removePlZa() {
@@ -175,6 +181,9 @@ caixaGl.forEach((caixa) => {
 function soltarPlayerGl() {
     const arrastado = document.querySelector(".arrastandoGl");
     this.appendChild(arrastado);
+    this.classList.toggle("GlPlayer");
+    const iconGl = document.querySelector(".GlPlayer");
+    iconGl.style.background ='none';
 }
 
 function removePlGl() {
@@ -191,6 +200,8 @@ Ataque.forEach((caixa) => {
 function AtsoltarPlayer() {
     const arrastadoAt = document.querySelector(".playerAddedAt");
     this.appendChild(arrastadoAt);
+    const iconBAta = document.querySelector(".BAtaPlayer");
+    iconBAta.style.backgroundImage ="url('player.png')";
 }
 
 function AtremovePl() {
@@ -210,6 +221,8 @@ Meio.forEach((caixa) => {
 function MesoltarPlayer() {
     const arrastadoMe = document.querySelector(".playerAddedMe");
     this.appendChild(arrastadoMe);
+    const iconBMe = document.querySelector(".BMePlayer");
+    iconBMe.style.backgroundImage ="url('player.png')";
 }
 
 function MeremovePl() {
@@ -229,6 +242,8 @@ Defesa.forEach((caixa) => {
 function DefsoltarPlayer() {
     const arrastadoZa = document.querySelector(".playerAddedZa");
     this.appendChild(arrastadoZa);
+    const iconBZag = document.querySelector(".BZagPlayer");
+    iconBZag.style.backgroundImage ="url('player.png')";
 }
 
 function DefremovePl() {
@@ -247,6 +262,8 @@ Goleiro.forEach((caixa) => {
 function GlsoltarPlayer() {
     const arrastadoGl = document.querySelector(".playerAddedGl");
     this.appendChild(arrastadoGl);
+    const iconBGl = document.querySelector(".BGlPlayer");
+    iconBGl.style.backgroundImage ="url('player.png')";
 }
 
 function GlDragEnd(){
