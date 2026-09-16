@@ -1,0 +1,44 @@
+/*
+ * style.css — apenas o que não cabe em utilitário Tailwind.
+ *
+ * Todo o resto (tamanhos, cores, posicionamento dos jogadores, tipografia)
+ * migrou para classes Tailwind no index.html / scripts. Os tokens de cor
+ * ficam no bloco `@theme` do index.html.
+ */
+
+/* Silhueta hexagonal do card FIFA — substitui player.png / ataque.png /
+   meio.png / zaga.png / goleiro.png, que eram só retângulos coloridos. */
+.card-shape {
+  clip-path: polygon(50% 0%, 100% 13%, 100% 80%, 50% 100%, 0% 80%, 0% 13%);
+}
+
+/* Destaque do slot selecionado. --pos-color vem de scripts/ui.js, o que
+   evita repetir o mesmo drop-shadow arbitrario uma vez por categoria. */
+.slot-active {
+  filter: drop-shadow(0 0 10px var(--pos-color));
+}
+
+/* Listras do gramado. */
+.pitch-stripes {
+  background-image: repeating-linear-gradient(
+    to bottom,
+    rgb(255 255 255 / 0.05) 0 8%,
+    transparent 8% 16%
+  );
+}
+
+/* Scrollbar discreta na lista de jogadores. */
+.scroll-slim {
+  scrollbar-width: thin;
+  scrollbar-color: rgb(255 255 255 / 0.35) transparent;
+}
+.scroll-slim::-webkit-scrollbar { width: 8px; }
+.scroll-slim::-webkit-scrollbar-track { background: transparent; }
+.scroll-slim::-webkit-scrollbar-thumb {
+  background-color: rgb(255 255 255 / 0.35);
+  border-radius: 9999px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}
